@@ -2,7 +2,7 @@
 
 section{
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 }
 #banner{
 	position: relative;
@@ -14,27 +14,115 @@ section{
 }
 #banner .contenedor{
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	font-family: 'Roboto Slab', serif;	
 }
 #banner h2{
-	font-size: 70px;
+	font-size: 120px;
 	color: #307F04;
 }
 #banner p{
-	font-size: 23px;
+	text-align: center;
+	font-size: 30px;
 	color: #A04000;
 }
-#bienvenidos{
-	width: 100%;
-	height: 100%;
-	position: relative;
-	z-index: 1;
-	background: skyblue;
+@media screen and (max-width: 800px){
+	#banner h2{
+		font-size: 60px;
+	    color: #307F04;
+	}
+	#banner p{
+	font-size: 20px;
+	color: #A04000;
+    }
 }
-#bienvenidos .montaña {
-	position: absolute;
-	top: 0;
+
+
+
+.contenedor2 h3{
+	font-family: 'Roboto Slab', serif;
+	font-size: 30px;
+	color: #DB592F;
+}
+.contenedor2 p{
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+}
+.contenedor2{
+	width: 80%;
+	margin: 0 auto;
+	background: #ECD5A7;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.texto{
+	width: 70%;
+	padding: 25px;
+	float: left;
+	box-sizing: border-box;
+}
+.imgderecha img{
+	width: 30%;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+}
+
+.contenedor3{
+	width: 90%;
+	height: 500px auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.img1 img{
+	width: 25%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.img2 img{
+	width: 25%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.img3 img{
+	width: 25%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.img4 img{
+	width: 25%;
+	float: left;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px){
+	.imgderecha img{
+		width: 100%;
+	}
+	.texto{
+		width: 100%;
+	}
+@media screen and (max-width: 600px){
+	.contenedor2{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+.ParteFinal{
+	height: 100%;
+}
+.ParteFinal p{
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
 }

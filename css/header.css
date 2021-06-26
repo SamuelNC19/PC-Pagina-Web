@@ -51,7 +51,7 @@ a, li{
 	}
 	.icono{
 		display: block;
-		position: fixed;
+		position: fixed;/*verificar*/
 		top: 20px;
 		right: 20px;
 		cursor: pointer;
