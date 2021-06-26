@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+header{
+	background: #222;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem 3rem;
+}
+.logo {
+	color: #307F04;
+	font-family: 'Roboto', sans-serif;
+}
+a, li{
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+}
+.menu ul{
+	display: flex;
+	align-items: center;
+	font-size: 1.3em;
+}
+.menu li{
+	margin-right: 1.7rem;
+}
+.menu a:hover{
+	color: #61D1A5;
+}
+
+
+/*MENU HAMBURGESA*/
+
+
+.icono img{
+	width: 35px;
+	height: 35px;
+	border-radius: 2px;
+}
+.icono, #check{
+	display: none;
+}
+@media (max-width: 768px){
+	.boton{
+		display: block;
+	}
+	.icono{
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		cursor: pointer;
+	}
+	.menu ul{
+		display: block;
+		position: fixed;
+		top: 70px;
+		left: -100%;
+		background: #666666;
+		width: 100%;
+		height: 100vh;
+		right: 0;
+		z-index: 100;
+	}
+	.menu ul li{
+		padding: 2rem;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	#check:checked ~ ul{
+		left: 0;
+		transition: all .30s;
+	}
+}
